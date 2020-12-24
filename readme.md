@@ -1,7 +1,7 @@
 ## Commands
-npm init = initializing package.json in the project.
-npm i jest = jest for testing the function.
-npm run test = starting test with npm.
+1. npm init - initializing package.json in the project.
+2. npm i jest - jest for testing the function.
+3. npm run test - starting test with npm.
 
 ## Files
 1. config.js - has the genesis block
