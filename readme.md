@@ -4,24 +4,24 @@
 3. npm run test - starting test with npm.
 
 ## Files
-1. config.js - 
+1. config.js
     1. has the genesis block
 2. block.js - 
     1. connects the genesis blocks,
     2. construct one block,
     3. mines block
 
-3. blockchain.js - 
+3. blockchain.js
     1. adds block,
     2. replaces block,
     3. check chain validation
 
-4. crypto-hash.js - 
+4. crypto-hash.js
     1. update hash variable with SHA-256
 
 
 ## Test Files and Rules
-1. block.test.js - 
+1. block.test.js
     Gives static variables to block 
     ### Rules 
     1. Describing main block class 
@@ -41,7 +41,7 @@
     
 
 
-2. blockchain.test.js - 
+2. blockchain.test.js
     ### Rules
     1. Describing core blockchain 
         1. It contains a chain array instance
@@ -51,7 +51,7 @@
 
     2. Chain Validation 
         1. When the chain does not start with the genesis block , it returs false.
-        2. When the chain starts with genesis block and has multiple blocks - 
+        2. When the chain starts with genesis block and has multiple blocks
             1. If lastHash reference has changed, it returns false.
             2. If he chain contains a block with an invalid field, it returns false.
             3. If the chain does not contain any invalid blocks, it returns true.
