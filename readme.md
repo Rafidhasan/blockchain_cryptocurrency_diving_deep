@@ -51,10 +51,34 @@
     2. Chain Validation {
         1. When the chain does not start with the genesis block , it returs false.
         2. When the chain starts with genesis block and has multiple blocks - {
-            If lastHash reference has changed, it returns false.
-            If he chain contains a block with an invalid field, it returns false.
-            If the chain does not contain any invalid blocks, it returns true.
+            1. If lastHash reference has changed, it returns false.
+            2. If he chain contains a block with an invalid field, it returns false.
+            3. If the chain does not contain any invalid blocks, it returns true.
         }
-        3. 
     }
+
+    3. Replace chain rules {
+        1. When the new chain is not longer {
+            1. It does not replace the chain
+            2. It logs an error
+        }
+
+        2. When the new chain is longer {
+            1. If the chain is invalid {
+                1. It does not replace the chain
+                2. It logs an error
+            }
+        }
+
+        3. When the chain is valid {
+            1. It does replace the chain
+            2. It logs
+        }
+    }
+}
+
+3. crypto-hash.test.js - {
+    ## Rules
+    1. It generates a SHA-256 hashed output
+    2. It produeces the same hash with the same input arguments in any order
 }
